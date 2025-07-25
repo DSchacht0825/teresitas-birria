@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.teresitasbirria.com/sitemap.xml
+Sitemap: https://teresitasbirria.com/sitemap.xml
 
 # Allow important content
 Allow: /images/
