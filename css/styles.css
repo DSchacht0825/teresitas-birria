@@ -2292,65 +2292,15 @@ a:hover {
         order: 1;
     }
     
-    /* Mobile Menu - Much More Spacious */
-    .menu-section {
-        padding: calc(var(--spacing-xxl) * 1.5) 0;
-    }
-    
+    /* Mobile Menu */
     .menu-grid {
         grid-template-columns: 1fr;
-        gap: calc(var(--spacing-xxl) * 2);
-        padding: 0 var(--spacing-lg);
-        margin-top: var(--spacing-xxl);
+        gap: var(--spacing-lg);
+        padding: 0 var(--spacing-md);
     }
     
     .menu-item {
         max-width: none;
-        margin-bottom: calc(var(--spacing-xxl) * 1.5);
-        border-radius: var(--radius-xl);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        background: var(--bg-primary);
-    }
-    
-    /* Much more spacious mobile menu content */
-    .menu-content {
-        padding: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .menu-content h3 {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin-bottom: calc(var(--spacing-lg) * 1.5);
-        text-align: center;
-        padding-bottom: var(--spacing-lg);
-        border-bottom: 2px solid var(--secondary-color);
-    }
-    
-    .menu-description {
-        font-size: 1.05rem;
-        line-height: 1.8;
-        margin-bottom: calc(var(--spacing-xxl) * 1.5);
-        text-align: left;
-        padding: var(--spacing-lg) 0;
-    }
-    
-    .menu-features {
-        justify-content: center;
-        margin-bottom: calc(var(--spacing-xxl) * 1.5);
-        gap: var(--spacing-lg);
-        flex-wrap: wrap;
-    }
-    
-    .feature {
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .menu-price {
-        text-align: center;
-        font-size: 1.3rem;
-        margin-top: var(--spacing-xl);
-        padding-top: var(--spacing-xl);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     /* Mobile Contact Cards */
@@ -2372,83 +2322,18 @@ a:hover {
         font-size: 1.2rem;
     }
     
-    /* Mobile Catering Form - Much More Spacious */
-    .catering-section {
-        padding: calc(var(--spacing-xxl) * 1.5) 0;
-    }
-    
+    /* Mobile Catering Form */
     .catering-form-wrapper {
-        margin: 0 var(--spacing-lg);
-        padding: calc(var(--spacing-xxl) * 1.5);
-        border-radius: var(--radius-xl);
-    }
-    
-    .form-header {
-        margin-bottom: calc(var(--spacing-xxl) * 1.5);
-        padding-bottom: var(--spacing-xl);
-    }
-    
-    .form-header h3 {
-        font-size: 2rem;
-        margin-bottom: var(--spacing-xl);
-        line-height: 1.3;
-    }
-    
-    .form-header p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-    
-    .catering-form {
-        gap: calc(var(--spacing-xl) * 1.5);
+        margin: 0 var(--spacing-md);
     }
     
     .form-row {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
-    
-    .catering-form .form-group {
-        margin-bottom: var(--spacing-lg);
-    }
-    
-    .catering-form label {
-        font-size: 1.1rem;
-        margin-bottom: var(--spacing-md);
-        font-weight: 600;
-    }
-    
-    .catering-form input,
-    .catering-form select,
-    .catering-form textarea {
-        padding: calc(var(--spacing-md) * 1.5) var(--spacing-xl);
-        font-size: 1.1rem;
-        border-radius: var(--radius-lg);
-        margin-bottom: var(--spacing-sm);
+        gap: var(--spacing-sm);
     }
     
     .checkbox-group {
         grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-        margin-top: var(--spacing-lg);
-    }
-    
-    .checkbox-item {
-        padding: var(--spacing-md);
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .catering-submit {
-        margin-top: calc(var(--spacing-xxl) * 1.5);
-        padding: var(--spacing-xl) calc(var(--spacing-xxl) * 1.5);
-        font-size: 1.3rem;
-    }
-    
-    .form-note {
-        margin-top: calc(var(--spacing-xl) * 1.5);
-        padding: var(--spacing-xl);
-        font-size: 1.1rem;
-        line-height: 1.6;
     }
     
     /* Mobile Footer */
@@ -2546,80 +2431,16 @@ a:hover {
         padding: var(--spacing-sm) var(--spacing-md);
     }
     
-    /* Extra Small Mobile Forms - Ultra Spacious */
-    .catering-section {
-        padding: calc(var(--spacing-xxl) * 2) 0;
-    }
-    
+    /* Extra Small Mobile Forms */
     .catering-form-wrapper {
-        margin: 0 var(--spacing-md);
-        padding: calc(var(--spacing-xxl) * 2);
+        margin: 0 var(--spacing-sm);
     }
     
-    .form-header {
-        margin-bottom: calc(var(--spacing-xxl) * 2);
-        padding-bottom: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .form-header h3 {
-        font-size: 1.8rem;
-        margin-bottom: calc(var(--spacing-xl) * 1.5);
-        line-height: 1.2;
-    }
-    
-    .form-header p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .catering-form {
-        gap: calc(var(--spacing-xxl) * 1.5);
-    }
-    
-    .form-row {
-        gap: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .catering-form .form-group {
-        margin-bottom: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .catering-form label {
-        font-size: 1rem;
-        margin-bottom: var(--spacing-lg);
-        font-weight: 600;
-    }
-    
-    .catering-form input,
-    .catering-form select,
-    .catering-form textarea {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
         font-size: 16px;
-        padding: var(--spacing-xl) var(--spacing-xl);
-        margin-bottom: var(--spacing-lg);
-        border-radius: var(--radius-md);
-    }
-    
-    .checkbox-group {
-        gap: var(--spacing-lg);
-        margin-top: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .checkbox-item {
-        padding: var(--spacing-lg);
-        margin-bottom: var(--spacing-md);
-    }
-    
-    .catering-submit {
-        margin-top: calc(var(--spacing-xxl) * 2);
-        padding: calc(var(--spacing-xl) * 1.5) calc(var(--spacing-xxl) * 2);
-        font-size: 1.2rem;
-    }
-    
-    .form-note {
-        margin-top: calc(var(--spacing-xxl) * 1.5);
-        padding: calc(var(--spacing-xl) * 1.5);
-        font-size: 1rem;
-        line-height: 1.5;
+        padding: var(--spacing-sm);
     }
     
     /* Extra Small Mobile Cards */
@@ -2636,66 +2457,18 @@ a:hover {
         margin: 0 auto;
     }
     
-    /* Extra Small Mobile Menu - Ultra Spacious */
-    .menu-section {
-        padding: calc(var(--spacing-xxl) * 2) 0;
-    }
-    
-    .menu-grid {
-        gap: calc(var(--spacing-xxl) * 2.5);
-        padding: 0 var(--spacing-md);
-        margin-top: calc(var(--spacing-xxl) * 1.5);
-    }
-    
+    /* Extra Small Mobile Menu */
     .menu-item {
-        margin-bottom: calc(var(--spacing-xxl) * 2);
-        border-radius: var(--radius-xl);
-        overflow: hidden;
-        background: var(--bg-primary);
-    }
-    
-    .menu-content {
-        padding: calc(var(--spacing-xl) * 1.5);
-    }
-    
-    .menu-content h3 {
-        font-size: 1.4rem;
-        line-height: 1.3;
-        margin-bottom: calc(var(--spacing-xl) * 1.5);
-        text-align: center;
-        padding-bottom: var(--spacing-xl);
-        border-bottom: 2px solid var(--secondary-color);
-    }
-    
-    .menu-description {
-        font-size: 1rem;
-        line-height: 1.7;
-        margin-bottom: calc(var(--spacing-xxl) * 2);
-        text-align: left;
-        padding: var(--spacing-xl) 0;
+        padding: var(--spacing-md);
     }
     
     .menu-features {
         flex-direction: column;
-        gap: var(--spacing-lg);
-        align-items: center;
-        margin-bottom: calc(var(--spacing-xxl) * 2);
+        gap: var(--spacing-xs);
     }
     
     .feature {
-        font-size: 0.9rem;
-        padding: var(--spacing-sm) var(--spacing-lg);
-        text-align: center;
-        min-width: 160px;
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    .menu-price {
-        text-align: center;
-        font-size: 1.2rem;
-        margin-top: calc(var(--spacing-xl) * 1.5);
-        padding-top: calc(var(--spacing-xl) * 1.5);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.85rem;
     }
     
     /* Extra Small Mobile Story */
