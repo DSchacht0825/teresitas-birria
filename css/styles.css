@@ -2475,6 +2475,16 @@ a:hover {
         gap: var(--spacing-lg);
     }
     
+    /* Center social links on mobile */
+    .social-links {
+        justify-content: center;
+        margin: var(--spacing-sm) auto;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
     /* Mobile Testimonials Ticker */
     .testimonials-ticker {
         height: 50px;
