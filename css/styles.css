@@ -2292,7 +2292,7 @@ a:hover {
         order: 1;
     }
     
-    /* Mobile Menu */
+    /* Mobile Menu - Streamlined & Centered */
     .menu-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
@@ -2301,6 +2301,36 @@ a:hover {
     
     .menu-item {
         max-width: none;
+    }
+    
+    /* Clean mobile menu styling */
+    .menu-content {
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+    
+    .menu-content h3 {
+        text-align: center;
+        margin-bottom: var(--spacing-md);
+        font-size: 1.4rem;
+    }
+    
+    .menu-description {
+        text-align: center;
+        margin-bottom: var(--spacing-md);
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* Hide feature boxes on mobile */
+    .menu-features {
+        display: none;
+    }
+    
+    .menu-price {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: var(--spacing-sm);
     }
     
     /* Mobile Contact Cards */
@@ -2457,18 +2487,31 @@ a:hover {
         margin: 0 auto;
     }
     
-    /* Extra Small Mobile Menu */
-    .menu-item {
+    /* Extra Small Mobile Menu - Streamlined */
+    .menu-content {
         padding: var(--spacing-md);
+        text-align: center;
     }
     
+    .menu-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .menu-description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Keep feature boxes hidden on extra small mobile */
     .menu-features {
-        flex-direction: column;
-        gap: var(--spacing-xs);
+        display: none;
     }
     
-    .feature {
-        font-size: 0.85rem;
+    .menu-price {
+        font-size: 1rem;
+        margin-top: var(--spacing-xs);
     }
     
     /* Extra Small Mobile Story */
