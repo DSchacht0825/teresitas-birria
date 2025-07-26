@@ -2243,10 +2243,10 @@ a:hover {
     .hero-subtitle {
         font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: var(--spacing-sm);
     }
     
-    /* Mobile Hero Section */
+    /* Mobile Hero Section - Tighter Spacing */
     .hero {
         min-height: 80vh;
     }
@@ -2258,7 +2258,8 @@ a:hover {
     .hero-badges {
         flex-direction: column;
         align-items: center;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
     }
     
     .badge {
@@ -2269,8 +2270,9 @@ a:hover {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
         width: 100%;
+        margin-top: var(--spacing-sm);
     }
     
     .hero-buttons .btn {
@@ -2532,6 +2534,18 @@ a:hover {
     
     .hero-subtitle {
         font-size: 0.95rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    /* Tighter spacing on extra small mobile */
+    .hero-badges {
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-xs);
+        margin-top: var(--spacing-xs);
     }
     
     .section-header h2 {
