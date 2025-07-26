@@ -2352,18 +2352,85 @@ a:hover {
         font-size: 1.2rem;
     }
     
-    /* Mobile Catering Form */
+    /* Mobile Catering Form - Full Width */
     .catering-form-wrapper {
-        margin: 0 var(--spacing-md);
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        padding: var(--spacing-xl) var(--spacing-lg);
     }
     
+    .form-header {
+        text-align: center;
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .form-header h3 {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .form-header p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    /* Use 2-column layout on mobile to reduce height */
     .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    /* Single column for special fields */
+    .form-row.single-column {
         grid-template-columns: 1fr;
-        gap: var(--spacing-sm);
+    }
+    
+    .catering-form .form-group {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .catering-form label {
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-xs);
+        font-weight: 600;
+    }
+    
+    .catering-form input,
+    .catering-form select,
+    .catering-form textarea {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+        border-radius: var(--radius-md);
     }
     
     .checkbox-group {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .checkbox-item {
+        padding: var(--spacing-xs);
+        font-size: 0.9rem;
+    }
+    
+    .catering-submit {
+        margin-top: var(--spacing-xl);
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .form-note {
+        margin-top: var(--spacing-lg);
+        padding: var(--spacing-md);
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
     
     /* Mobile Footer */
@@ -2461,15 +2528,58 @@ a:hover {
         padding: var(--spacing-sm) var(--spacing-md);
     }
     
-    /* Extra Small Mobile Forms */
+    /* Extra Small Mobile Forms - Full Width */
     .catering-form-wrapper {
-        margin: 0 var(--spacing-sm);
+        margin: 0;
+        padding: var(--spacing-lg) var(--spacing-md);
+        border-radius: 0;
     }
     
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
+    .form-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .form-header p {
+        font-size: 0.95rem;
+    }
+    
+    /* Keep 2-column layout but with smaller gaps */
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .catering-form label {
+        font-size: 0.85rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .catering-form input,
+    .catering-form select,
+    .catering-form textarea {
         font-size: 16px;
+        padding: var(--spacing-sm);
+        border-radius: var(--radius-sm);
+    }
+    
+    .checkbox-group {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xs);
+    }
+    
+    .checkbox-item {
+        font-size: 0.85rem;
+        padding: var(--spacing-xs);
+    }
+    
+    .catering-submit {
+        font-size: 1rem;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        max-width: 250px;
+    }
+    
+    .form-note {
+        font-size: 0.85rem;
         padding: var(--spacing-sm);
     }
     
