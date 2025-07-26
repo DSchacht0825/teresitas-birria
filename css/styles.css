@@ -2259,7 +2259,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
         gap: var(--spacing-xs);
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-xs);
     }
     
     .badge {
@@ -2272,7 +2272,7 @@ a:hover {
         align-items: center;
         gap: var(--spacing-sm);
         width: 100%;
-        margin-top: var(--spacing-sm);
+        margin-top: 0;
     }
     
     .hero-buttons .btn {
@@ -2537,15 +2537,15 @@ a:hover {
         margin-bottom: var(--spacing-xs);
     }
     
-    /* Tighter spacing on extra small mobile */
+    /* Ultra-tight spacing on extra small mobile */
     .hero-badges {
         gap: var(--spacing-xs);
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: 4px;
     }
     
     .hero-buttons {
         gap: var(--spacing-xs);
-        margin-top: var(--spacing-xs);
+        margin-top: 0;
     }
     
     .section-header h2 {
