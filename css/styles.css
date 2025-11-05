@@ -1841,7 +1841,6 @@ a:hover {
 
 .instagram-horizontal-feed {
     display: flex;
-    justify-content: center;
     gap: var(--spacing-lg);
     overflow-x: auto;
     overflow-y: hidden;
