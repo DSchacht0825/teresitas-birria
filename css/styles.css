@@ -698,6 +698,272 @@ a:hover {
     border: 4px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Featured TV Section */
+.featured-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('../images/featured-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.featured-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto var(--spacing-xxl) auto;
+}
+
+.video-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+    background: rgba(0, 0, 0, 0.6);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 2px solid rgba(212, 191, 136, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.video-embed {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 3px solid var(--primary-color);
+    background: #000;
+}
+
+.video-embed .powa {
+    width: 100%;
+    min-height: 300px;
+}
+
+.video-info {
+    color: white;
+}
+
+.video-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: var(--gradient-primary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+    box-shadow: var(--shadow-md);
+}
+
+.badge-icon {
+    font-size: 1.2rem;
+}
+
+.badge-text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.video-info h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+}
+
+.video-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+}
+
+.video-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(212, 191, 136, 0.1);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--primary-color);
+}
+
+.highlight-icon {
+    font-size: 1.3rem;
+    min-width: 30px;
+}
+
+.highlight-text {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.video-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.meta-item strong {
+    color: var(--secondary-color);
+}
+
+.featured-cta {
+    text-align: center;
+    background: rgba(212, 191, 136, 0.1);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 2px solid rgba(212, 191, 136, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-text {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsive for Featured Section */
+@media (max-width: 1024px) {
+    .video-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .video-embed {
+        order: 1;
+    }
+
+    .video-info {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .video-wrapper {
+        padding: var(--spacing-lg);
+    }
+
+    .video-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .video-description {
+        font-size: 0.95rem;
+    }
+
+    .video-highlights {
+        gap: var(--spacing-xs);
+    }
+
+    .highlight-item {
+        padding: var(--spacing-xs);
+    }
+
+    .highlight-text {
+        font-size: 0.9rem;
+    }
+
+    .video-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .featured-cta {
+        padding: var(--spacing-lg);
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-wrapper {
+        padding: var(--spacing-md);
+    }
+
+    .video-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .video-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .video-badge {
+        padding: 6px var(--spacing-sm);
+    }
+
+    .badge-text {
+        font-size: 0.85rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+}
+
 /* Menu Section */
 .menu-section {
     padding: var(--spacing-xxl) 0;
@@ -1533,7 +1799,137 @@ a:hover {
     font-weight: 600;
 }
 
-/* Instagram Section */
+/* Instagram Feed Section - Horizontal Scroll */
+.instagram-feed-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-feed-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(15, 15, 15, 0.92), rgba(15, 15, 15, 0.92)),
+        url('../images/instagram-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.instagram-feed-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.instagram-scroll-container {
+    position: relative;
+    margin: 0 auto var(--spacing-xl) auto;
+    overflow: hidden;
+}
+
+.instagram-horizontal-feed {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: var(--spacing-md) 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(255, 255, 255, 0.1);
+}
+
+.instagram-horizontal-feed::-webkit-scrollbar {
+    height: 8px;
+}
+
+.instagram-horizontal-feed::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.instagram-horizontal-feed::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.instagram-horizontal-feed::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Instagram Embed Posts */
+.instagram-horizontal-feed blockquote {
+    min-width: 320px;
+    max-width: 320px;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 2px solid rgba(212, 191, 136, 0.3) !important;
+    border-radius: var(--radius-lg) !important;
+    backdrop-filter: blur(5px);
+    transition: all var(--transition-normal);
+}
+
+.instagram-horizontal-feed blockquote:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 10px 30px rgba(212, 191, 136, 0.3);
+}
+
+.instagram-cta-footer {
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.instagram-follow-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 1.1rem;
+}
+
+.instagram-icon {
+    font-size: 1.3rem;
+}
+
+/* Mobile Responsive for Instagram Section */
+@media (max-width: 768px) {
+    .instagram-feed-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .instagram-horizontal-feed {
+        gap: var(--spacing-md);
+        padding: var(--spacing-sm) 0;
+    }
+
+    .instagram-horizontal-feed blockquote {
+        min-width: 280px;
+        max-width: 280px;
+    }
+
+    .instagram-follow-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-horizontal-feed blockquote {
+        min-width: 260px;
+        max-width: 260px;
+    }
+}
+
+/* Old Instagram Section (keeping for compatibility) */
 .instagram-section {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);

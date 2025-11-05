@@ -482,5 +482,9 @@ Mensaje: ${data.message}`);
 
     // Testimonials Ticker - no JavaScript needed, pure CSS animation
 
+    // Instagram embeds are now hardcoded in HTML - Instagram's embed.js will process them automatically
+    // To add more posts: Go to Instagram post → Click "..." → "Embed" → Copy the entire <blockquote> code
+    // Paste it into the HTML in the #instagramFeed container
+
     console.log('¡Teresita\'s Birria está lista para servir! 🌮✨');
 });
